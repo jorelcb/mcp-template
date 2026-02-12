@@ -1,0 +1,11 @@
+name: mcp-template
+description: "Template for new MCP servers."
+version: 1.0.0
+mcpServers:
+  default:
+    type: stdio
+    command: node
+    args:
+      - "%EXTENSION_ROOT%/build/index.js"
+    env:
+      NODE_ENV: production
