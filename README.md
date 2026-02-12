@@ -1,37 +1,63 @@
-# MCP Server Template
+# 🧩 MCP Server Template
 
-A starter template for building new Model Context Protocol (MCP) servers. It comes pre-configured with TypeScript, the official SDK, and the structure for a Gemini CLI Extension.
+> The ultimate starter kit for building professional Model Context Protocol servers.
 
-## Quick Start
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Stack](https://img.shields.io/badge/stack-TypeScript-blue.svg)]()
+[![MCP](https://img.shields.io/badge/MCP-Ready-green.svg)](https://modelcontextprotocol.io)
 
-1.  **Copy this directory:**
-    ```bash
-    cp -r mcp-template my-new-server
-    cd my-new-server
-    ```
+---
 
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
+## 🎯 Overview
 
-3.  **Customer `package.json`:** Update the name, description, and version.
+Stop reinventing the wheel. This template provides a **production-ready foundation** for creating new MCP servers, pre-configured with the best practices for TypeScript, Docker, and Gemini CLI Extensions.
 
-4.  **Implement your Tools:** Edit `src/index.ts` to add your custom tools and logic.
+### ✨ What's Included?
 
-5.  **Configure Extension:**
-    - Edit `extension.yaml` with your extension name and description.
-    - Edit `GEMINI.md` to provide context/rules for the Agent.
-    - Add custom prompts in `commands/*.toml`.
+- **🏗️ Dual-Layer Architecture**: Setup for both Raw MCP and Gemini Extensions.
+- **🔌 Official SDK**: Pre-configured `@modelcontextprotocol/sdk`.
+- **🐳 Docker Ready**: `Dockerfile` optimized for deployment.
+- **🤖 Agent Context**: `GEMINI.md` structure for "Soft Logic".
+- **🛠️ TypeScript**: Strict mode, linting, and build scripts.
 
-6.  **Build:**
-    ```bash
-    npm run build
-    ```
+## 🚀 Usage
 
-## Structure
+### 1. Create a New Server
 
-- `src/index.ts`: Main entry point for the MCP server.
-- `extension.yaml`: Configuration for Gemini CLI.
-- `GEMINI.md`: Context file for the Agent.
-- `commands/`: Directory for custom slash command definitions (.toml).
+```bash
+# 1. Clone the template
+git clone https://github.com/jorelcb/mcp-template my-new-server
+
+# 2. Reset git history
+cd my-new-server
+rm -rf .git
+git init
+
+# 3. Install dependencies
+npm install
+```
+
+### 2. Customize
+
+1.  **Update `package.json`**: Set your server name and description.
+2.  **Implement Logic**: Edit `src/index.ts` to add your Tools.
+3.  **Define Agent Persona**: Edit `GEMINI.md` to guide the AI.
+4.  **Add Commands**: Create `.toml` files in `commands/`.
+
+## 📂 Project Structure
+
+```
+.
+├── src/                # 🧠 TypeScript Source Code
+├── commands/           # ⚡ Gemini CLI Slash Commands
+├── GEMINI.md           # 🤖 Agent Context (Soft Logic)
+├── extension.yaml      # ⚙️ Extension Config
+└── Dockerfile          # 🐳 Container Config
+```
+
+## 🤝 Contributing
+
+Contributions to the template are welcome! Please ensure any changes are generic and useful for *all* future servers.
+
+---
+**Part of the [MCP Servers Monorepo](../README.md)**
