@@ -12,5 +12,5 @@ This template serves as the base for new MCP servers. Changes here should be gen
 ## Guidelines
 
 - Keep the template minimal.
-- Ensure `extension.yaml` and `GEMINI.md` standard files are present.
+- Ensure `gemini-extension.yaml` and `GEMINI.md` standard files are present.
 - Verify `npm install` works with a fresh clone.
