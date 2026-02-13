@@ -51,7 +51,7 @@ npm install
 ├── src/                # 🧠 TypeScript Source Code
 ├── commands/           # ⚡ Gemini CLI Slash Commands
 ├── GEMINI.md           # 🤖 Agent Context (Soft Logic)
-├── gemini-extension.yaml # ⚙️ Extension Config
+├── gemini-extension.json # ⚙️ Extension Config
 └── Dockerfile          # 🐳 Container Config
 ```
 

@@ -1,0 +1,17 @@
+{
+    "name": "mcp-template-server",
+    "description": "Template for creating new MCP servers with Gemini CLI support",
+    "version": "1.0.0",
+    "mcpServers": {
+        "default": {
+            "type": "stdio",
+            "command": "node",
+            "args": [
+                "%EXTENSION_ROOT%/build/index.js"
+            ],
+            "env": {
+                "NODE_ENV": "production"
+            }
+        }
+    }
+}
